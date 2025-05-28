@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --lavender-pink: #FFBDE5;
+  --vanilla: #FFF4AF;
+  --lavender-pink-2: #FFB5ED;
+  --light-orange: #FFE1C1;
+  --fairy-tale: #FFC7DB;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Example button utility classes using the palette */
+.btn-primary {
+  background: var(--lavender-pink);
+  color: #000;
+}
+.btn-primary:hover {
+  background: var(--lavender-pink-2);
+}
+.btn-secondary {
+  background: var(--vanilla);
+  color: #000;
+}
+.btn-secondary:hover {
+  background: var(--light-orange);
+}
+.btn-accent {
+  background: var(--fairy-tale);
+  color: #000;
+}
+.btn-accent:hover {
+  background: var(--lavender-pink);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

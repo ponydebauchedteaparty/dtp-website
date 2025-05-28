@@ -1,0 +1,46 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <main className="flex flex-col items-center justify-center min-h-screen text-gray-900 bg-white px-4 py-8 overflow-hidden">
+      <h1 className="text-5xl font-extrabold mb-6 text-center drop-shadow-lg">Welcome to Debauched Tea Party!</h1>
+      <p className="mb-6 text-xl max-w-2xl text-center">
+        Debauched Tea Party (DTP) is a vibrant community of tech enthusiasts, hackers, and creators. We're united by our passion for technology, cybersecurity, artificial intelligence, and the open exchange of ideas. Whether you're a seasoned developer, a curious learner, or just someone who loves to tinker, you'll find a home here.
+      </p>
+      <p className="mb-6 text-lg max-w-2xl text-center">
+        Our IRC server is open to everyone—drop in to chat, ask questions, or just hang out. Enjoy our community-run radio station, where you can listen to music, tech talk, and live shows curated by our members. Explore our blog for the latest in technology, infosec, and AI, and check out our personal and collaborative projects.
+      </p>
+      <p className="mb-8 text-lg max-w-2xl text-center">
+        At DTP, we believe in learning by doing and growing together. We encourage you to join us, contribute your ideas, submit projects, DJ on the radio, or simply share exciting tech news. Everyone is welcome, and every voice matters.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 mb-8">
+        <a
+          href="https://webchat.debauchedtea.party"
+          className="btn-primary px-6 py-3 rounded font-semibold transition text-center"
+        >
+          Join the Chat
+        </a>
+        <Link
+          href="/radio"
+          className="btn-secondary px-6 py-3 rounded font-semibold transition text-center"
+        >
+          Listen to Radio
+        </Link>
+      </div>
+      <div className="mb-4 text-center">
+        <span className="font-bold">IRC Network:</span> <span className="font-mono">irc.debauchedtea.party</span> <span className="font-bold">port</span> <span className="font-mono">1337</span>
+      </div>
+      <div className="flex justify-center gap-4 mt-4">
+        {/* X (Twitter) icon placeholder */}
+        <a href="https://x.com/YOUR_HANDLE" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="16" fill="#1A1A1A" />
+            <path d="M22.7 9.3L16.9 15.1L11.1 9.3H9.3V9.7L15.1 15.5L9.3 21.3V22.7H11.1L16.9 16.9L22.7 22.7H24.5V22.3L18.7 16.5L24.5 10.7V9.3H22.7Z" fill="white" />
+          </svg>
+        </a>
+      </div>
+    </main>
+  );
+}
