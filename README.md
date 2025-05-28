@@ -38,3 +38,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ## Adding Your Assets
 
 Place your `logo.png` and `background.png` files in the `public/` directory. These will be used for the site logo and background image, respectively.
+
+
+V2
