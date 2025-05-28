@@ -9,7 +9,10 @@ export default function AboutPage() {
           Debauched Tea Party is more than just a group—it's a movement of like-minded individuals who thrive on curiosity and collaboration. Our mission is to create a welcoming space where people from all backgrounds can share knowledge, experiment with new technologies, and build meaningful connections.
         </p>
         <p className="mb-4 text-lg">
-          We host an open IRC server, a lively radio station, and a growing collection of blogs and projects. Our members come from diverse backgrounds, but we're all united by a love for tech and a desire to learn. Whether you're interested in cybersecurity, AI, programming, or just want to meet new friends, DTP is the place for you.
+          We&apos;re a community of tech enthusiasts, hackers, and curious minds who love to explore the intersection of technology, security, and creativity.
+        </p>
+        <p className="mb-4 text-lg">
+          Whether you&apos;re into cybersecurity, programming, AI, or just love learning about new tech, you&apos;ll find a welcoming space here.
         </p>
         <p className="mb-4 text-lg">
           We're always looking for new contributors—whether you want to write a blog post, share a project, DJ on our radio, or just join the conversation. At DTP, everyone is both a student and a teacher. Come as you are, and help us shape the future of our community.

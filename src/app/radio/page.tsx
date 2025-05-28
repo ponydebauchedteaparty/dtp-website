@@ -9,7 +9,7 @@ export default function RadioPage() {
           Welcome to Radio Debauchery, your go-to destination for music, tech discussions, and live shows curated by our community. Our radio station is a space for creativity and connection—tune in to discover new music, listen to tech talks, or catch live DJ sets from our members.
         </p>
         <p className="mb-4 text-lg">
-          Interested in becoming a DJ or hosting your own show? We'd love to have you! Reach out to us on IRC to get started. Radio Debauchery is always evolving, and we're excited to see what you'll bring to the airwaves.
+          Interested in becoming a DJ or hosting your own show? We&apos;d love to have you! Reach out to us on IRC to get started. Radio Debauchery is always evolving, and we&apos;re excited to see what you&apos;ll bring to the airwaves.
         </p>
         <div className="my-8 flex justify-center">
           <div

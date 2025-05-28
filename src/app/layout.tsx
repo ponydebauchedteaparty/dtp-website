@@ -1,32 +1,22 @@
 "use client";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-white text-gray-900`}
-      >
+      <body className={inter.className}>
         <nav className="w-full bg-white bg-opacity-90 px-2 sm:px-4 py-0 flex items-center justify-center gap-2 sm:gap-6 text-base sm:text-lg font-semibold sticky top-0 z-20 min-h-[100px]">
           <div className="flex items-center gap-2 sm:gap-3 absolute left-2 sm:left-4 h-full">
             <Image src="/logo.png" alt="DTP Logo" height={150} width={150} className="h-[150px] w-auto" />
